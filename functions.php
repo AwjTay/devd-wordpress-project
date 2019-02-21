@@ -35,7 +35,7 @@ function create_custom_post_type_related_reading(){
 		'rewrite' => array( "slug" => "related-reading" ), // defines URL base
 		'supports'=> array('title', 'thumbnail', 'editor', 'excerpt'),
 		'show_in_nav_menus' => true,
-		'taxonomies' => array( 'related-reading_category', 'post_tag') // own categories
+		'taxonomies' => array( 'category', 'post_tag') // own categories
 	);
 
 register_post_type('relatedreading', $args);

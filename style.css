@@ -9,6 +9,27 @@
  Text Domain:  twenty-sixteen-child
 */
 
+/*catergory search styling*/
+#category_search button{
+	margin-bottom: 2vw;
+}
+
+#category_search select{
+	margin-left: 6vw;
+	margin-right: 2vw;
+	padding-top:8px; 
+	padding-bottom:8px;
+	padding-right: 4px; 
+	padding-left: 4px;
+	background-color: #727272;
+	border: 2px #ea6500 solid;
+}
+
+/*Search results styling*/
+#result_header{
+	margin-bottom: 2vw;
+}
+
 
 /*front-page overrides*/
 #most_recent_post{
@@ -16,6 +37,10 @@
 	padding: 1vw;
 }
 
+
+#page{
+	border-radius: 20px;
+}
 
 
 
@@ -30,4 +55,18 @@
 
 .main-navigation a {
 	color: red;
+}
+
+body:not(.custom-background-image).admin-bar:before {
+	content: unset;
+
+}
+
+body:not(.custom-background-image).admin-bar:after {
+	content: unset;
+
+}
+
+.imprint{
+	display: none;
 }
