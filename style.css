@@ -1,0 +1,26 @@
+/*
+ Theme Name:   Twenty Sixteen Child Devd
+ Theme URI:    http://example.com/twenty-sixteen-child/
+ Description:  Twenty Sixteen Child Theme
+ Author:       John Doe
+ Author URI:   http://example.com
+ Template:     twentysixteen
+ Version:      1.0.0
+ Text Domain:  twenty-sixteen-child
+*/
+
+
+
+
+
+
+
+/*Nav bar style overrides*/
+
+#site-header-menu{
+	padding-right: 30vw;
+}
+
+.main-navigation a {
+	color: red;
+}
