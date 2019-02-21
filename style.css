@@ -32,10 +32,16 @@
 
 
 /*front-page overrides*/
-#most_recent_post{
+.post_box{
 	border: 1px #D3D3D3 dashed;
 	padding: 1vw;
+
 }
+
+/*#most_recent_post{
+	border: 1px #D3D3D3 dashed;
+	padding: 1vw;
+}*/
 
 
 #page{
@@ -57,12 +63,12 @@
 	color: red;
 }
 
-body:not(.custom-background-image).admin-bar:before {
+body:not(.custom-background-image).admin-bar::before {
 	content: unset;
 
 }
 
-body:not(.custom-background-image).admin-bar:after {
+body:not(.custom-background-image).admin-bar::after {
 	content: unset;
 
 }

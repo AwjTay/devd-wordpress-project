@@ -21,14 +21,15 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<form id="category_search" method="get">
-				<select name="one" > 
+				<select name="one" >
+					<option value="" >Select a category</option> 
 					<option value="javascript">javascript</option>
 					<option value="css">css</option>
 				</select>
 				<button>Find</button>
 			</form>
 
-			<h3 id="result_header">Reading Related to this topic:</h3>
+			<h3 id="result_header">Reading related to <?php echo $_GET['one'] ?> </h3>
 		
 			<?php
 			// Start the loop.
@@ -54,8 +55,9 @@ get_header(); ?>
 				<ul>
 
 					<li>
-						<div id="most_recent_post">								
-						<h3><?php the_title(); ?></h3>
+						<div class="post_box">								
+						<h3> <?php the_title(); ?> </h3>
+						<h5> <?php the_field('author'); ?> </h5>
 						<div class ="entry-content"> <a href=<?php the_field('link');?>> <?php the_field('link');?> </a> </div>
 						</div>
 					</li>

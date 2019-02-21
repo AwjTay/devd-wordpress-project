@@ -39,7 +39,7 @@ get_header(); ?>
 
 					while($result->have_posts() ) : $result->the_post();
 						?>
-						<div id="most_recent_post">
+						<div class="post_box">
 						<h3>Most recent post:</h3>
 						<h3><?php the_title(); ?></h3>
 						<div class ="entry-content">

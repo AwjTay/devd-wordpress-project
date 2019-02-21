@@ -25,6 +25,7 @@ get_header(); ?>
 
 		<form id="category_search" method="get">
 			<select name="one" > 
+				<option value="" >Select a category</option> 
 				<option value="javascript">javascript</option>
 				<option value="css">css</option>
 			</select>
@@ -32,7 +33,7 @@ get_header(); ?>
 			
 		</form>
 
-		<h3 id="result_header">Blogs related to this topic:</h3>
+		<h3 id="result_header">Blogs related to <?php echo $_GET['one'] ?> </h3>
 
 <?php 
 
@@ -60,7 +61,7 @@ get_header();
 			<ul>
 
 				<li>
-					<div id="most_recent_post">								
+					<div  class="post_box">								
 					<h3><?php the_title(); ?></h3>
 					<div class ="entry-content"> <?php the_content(); ?> </div>
 					</div>
