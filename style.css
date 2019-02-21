@@ -10,6 +10,13 @@
 */
 
 
+/*front-page overrides*/
+#most_recent_post{
+	border: 1px #D3D3D3 dashed;
+	padding: 1vw;
+}
+
+
 
 
 
